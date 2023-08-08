@@ -1,0 +1,88 @@
+html {
+height: 100%;
+}
+
+body {
+
+    min-height: 100%;
+    background-color: #cbf0f3;
+
+}
+
+/* container */
+.app-loading {
+
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    background: 0 0;
+
+}
+
+.app-loading-circle {
+
+    width: 148px;
+    height: 148px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+
+    
+}
+
+.app-loading-inner-circle{
+
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: #fff;
+    border-radius: 50%;
+
+}
+
+.app-loading .app-loading-circle .app-loading-spinner {
+    height: 0;
+    width: 0;
+    border-radius: 50%;
+    border-right: 74px solid #f2f2f2;
+    border-top: 74px solid #f2f2f2;
+    border-left: 74px solid #f2f2f2;
+    border-bottom: 74px solid transparent;
+    animation: rotate 1.6s infinite;
+}
+
+.app-loaging-img {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 36px;
+  height: 36px;
+}
+
+@keyframes rotate {
+
+    from {
+        transform: rotate(0deg);
+    }
+    
+    to {
+
+        transform: rotate(360deg);
+    }
+}
